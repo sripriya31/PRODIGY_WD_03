@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <form id="mode-form">
+            <div class="mode-selection">
+                <label for="mode">Select Mode:</label>
+                <select id="mode" name="mode">
+                    <option value="player">Player vs. Player</option>
+                    <option value="ai">Player vs. AI</option>
+                </select>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="selected-mode" class="message"></div>
+        <div id="game-container">
+            <div id="game-board" class="board">
+                <!-- Game board will be generated using JavaScript -->
+            </div>
+            <div id="ai-move" class="message"></div>
+        </div>
+        <div id="message" class="message"></div>
+        <button id="reset-button" class="reset-button">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
